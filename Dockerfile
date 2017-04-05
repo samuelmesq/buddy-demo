@@ -8,9 +8,6 @@ RUN apk update && apk upgrade && apk add --no-cache \
  gcc \
  python
 
-ADD package.json yarn.lock /tmp/
-ADD .yarn-cache.tgz /
-
 RUN cd /tmp && yarn
 RUN mkdir -p /opt/app && cd /opt/app && ln -s /tmp/node_modules
 
