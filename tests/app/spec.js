@@ -1,3 +1,3 @@
 const test = require('ava');
 
-test('it should not pass', t => { t.failt() });
+test('it should pass', t => { t.pass() });
