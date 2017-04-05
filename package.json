@@ -1,0 +1,11 @@
+{
+  "name": "buddy-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:samuelmesq/buddy-demo.git",
+  "author": "Samuel Mesquita <samuelmesq@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.2.0"
+  }
+}
