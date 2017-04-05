@@ -5,7 +5,18 @@
   "repository": "git@github.com:samuelmesq/buddy-demo.git",
   "author": "Samuel Mesquita <samuelmesq@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test ava"
+  },
   "dependencies": {
+    "ava": "^0.18.2",
     "koa": "^2.2.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/spec.js"
+    ],
+    "concurrency": 5,
+    "timeout": "120s"
   }
 }
