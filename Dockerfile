@@ -8,7 +8,7 @@ RUN apk update && apk upgrade && apk add --no-cache \
  gcc \
  python
 
-ADD package.json yarn.lock .npmrc /tmp/
+ADD package.json yarn.lock /tmp/
 ADD .yarn-cache.tgz /
 
 RUN cd /tmp && yarn
